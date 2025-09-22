@@ -1,0 +1,65 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+
+        <title> MiniERP </title>
+
+        </head>
+
+        <body>
+
+            <h1> MiniERP </h1>
+
+            <div>
+                <input type="text" id="title" placeholder="Title" />
+                <input type="number" id="price" placeholder="Price" />
+                <input type="number" id="taxes" placeholder="Taxes" />
+                <input type="number" id="ads" placeholder="Ads" />
+                <input type="number" id="discount" placeholder="Discount" />
+                <small id="total">Total: 0</small><br><br>
+
+                <input type="number" id="count" placeholder="Count" />
+                <input type="text" id="category" placeholder="Category" />
+                <button id="submit">Create</button>
+            </div>
+
+            <br><hr><br>
+
+            <div>
+                <input type="text" id="search" placeholder="Search..." />
+                <button onclick="setSearchMode('title')">Search by Title</button>
+                <button onclick="setSearchMode('category')">Search by Category</button>
+            </div>
+
+            <div id="deleteAll"></div>
+
+            <table border="1" cellpadding="5">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Category</th>
+                    <th>Count</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
